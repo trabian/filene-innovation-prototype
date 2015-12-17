@@ -1,46 +1,27 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
-'use strict';
-
-var React = require('react-native');
-var {
+import React, {
   AppRegistry,
+  Component,
   StyleSheet,
-  Text,
-  View,
-} = React;
+  View
+} from 'react-native';
 
-var FilenePrototype = React.createClass({
-  render: function() {
+let styles;
+
+import Overview from './src/scenes/Overview';
+
+export default class FilenePrototype extends Component {
+  
+  render() {
+
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to the Filene Prototype!
-        </Text>
-      </View>
+      <Overview />
     );
   }
-});
+  
+}
 
-var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+styles = StyleSheet.create({
+
 });
 
 AppRegistry.registerComponent('FilenePrototype', () => FilenePrototype);
