@@ -28,7 +28,7 @@ export default class Prototypes extends Component {
     this.props.navigator.parentNavigator.push({
 
       renderScene: (navigator) => {
-        return <CustomNavigator navigator={navigator} initialRoute={route} />
+        return <CustomNavigator navigator={navigator} initialRoute={route} showNavigationBar={false} includeTopPadding={false} />
       },
 
       configureScene: () => ExNavigator.SceneConfigs.FloatFromBottom

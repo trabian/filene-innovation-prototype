@@ -1,6 +1,10 @@
+import React from 'react-native';
+
 import ExNavigator from '@exponent/react-native-navigator';
 
 import InstantIssue from './InstantIssue';
+
+import WelcomeTitle from './components/WelcomeTitle';
 
 const defaultRouteConfig = {
 
@@ -14,7 +18,7 @@ export const instantIssue = {
 
   label: 'Instant Card Issue',
 
-  getTitle: () => 'Welcome to the CU!',
+  getTitle: () => 'Welcome to Filene!',
 
   getSceneClass: () => InstantIssue
 
